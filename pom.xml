@@ -9,11 +9,11 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>org.fluentcodes.sandbox</groupId>
-    <artifactId>java-springboot-emptyparent</artifactId>
-    <name>Sandbox Java Springboot: Empty with Parent</name>
+    <artifactId>java-springboot-mongodb</artifactId>
+    <name>Sandbox Java Springboot: MongoDb</name>
     <version>0.0.1</version>
     <packaging>pom</packaging>
-    <description>Base for Sandbox Java Springboot with Parent</description>
+    <description>Sandbox Java Springboot MongoDb</description>
     <url>https://github.com/fluentcodes/sandbox</url>
 
     <properties>
@@ -23,13 +23,17 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-autoconfigure</artifactId>
             <version>2.6.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 

@@ -1,5 +1,5 @@
-# Topic Branch java7-empty
-Just an empty branch to create new topic branches.
+# Topic Branch Spring Boot MongoDb
+
 ## Links
-* https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-parent
+* https://spring.io/guides/gs/accessing-data-mongodb/
 
