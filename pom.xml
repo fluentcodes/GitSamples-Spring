@@ -9,17 +9,18 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>org.fluentcodes.sandbox</groupId>
-    <artifactId>java-springboot-emptyparent</artifactId>
-    <name>Sandbox Java Springboot: Empty with Parent</name>
+    <artifactId>java-springboot-properties</artifactId>
+    <name>Sandbox Java Springboot: Properties</name>
     <version>0.0.1</version>
-    <packaging>pom</packaging>
-    <description>Base for Sandbox Java Springboot with Parent</description>
+    <packaging>jar</packaging>
+    <description>Sandbox Java Springboot with Parent and Properties</description>
     <url>https://github.com/fluentcodes/sandbox</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -31,10 +32,36 @@
             <artifactId>spring-boot-autoconfigure</artifactId>
             <version>2.6.2</version>
         </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+            </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.3.3.RELEASE</version>
+                <configuration>
+                    <layout>ZIP</layout>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
