@@ -5,12 +5,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-// values from application.yaml
+
+/**
+ * Test for {@link FooBeanConfig}
+ */
 @SpringBootTest
-public class MyBeanTest {
+public class FooBeanConfigTest {
 
     @Autowired
-    private MyBean myBean;
+    private FooBeanConfig myBean;
 
     @Test
     public void testKey1() {

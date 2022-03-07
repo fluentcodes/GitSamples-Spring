@@ -9,8 +9,8 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>org.fluentcodes.sandbox</groupId>
-    <artifactId>java-springboot-properties</artifactId>
-    <name>Sandbox Java Springboot: Properties</name>
+    <artifactId>java-springboot-objects</artifactId>
+    <name>Sandbox Java Springboot: Objects</name>
     <version>0.0.1</version>
     <packaging>jar</packaging>
     <description>Sandbox Java Springboot with Parent and Properties</description>
