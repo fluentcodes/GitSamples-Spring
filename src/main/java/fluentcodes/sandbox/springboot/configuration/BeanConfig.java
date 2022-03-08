@@ -1,6 +1,6 @@
 package fluentcodes.sandbox.springboot.configuration;
 
-import fluentcodes.sandbox.springboot.testitems.AppName;
+import fluentcodes.sandbox.springboot.testitems.InterfaceBean;
 import fluentcodes.sandbox.springboot.testitems.ExampleBean;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
@@ -12,9 +12,15 @@ import org.springframework.context.annotation.Configuration;
 // https://www.logicbig.com/tutorials/spring-framework/spring-core/inject-bean-by-name.html
 @Configuration
 public class BeanConfig {
-    @org.springframework.context.annotation.Bean
-    public AppName getAppName(@Value("${app.name}") String appName) {
-        return () -> appName;
+
+    @Bean(name="interfaceBeanDefault")
+    public InterfaceBean interfaceBean() {
+        return () -> "default";
+    }
+
+    @Bean(name="interfaceBeanValue")
+    public InterfaceBean getInterfaceBean(@Value("${app.name}") String name) {
+        return () -> name;
     }
 
     @Bean

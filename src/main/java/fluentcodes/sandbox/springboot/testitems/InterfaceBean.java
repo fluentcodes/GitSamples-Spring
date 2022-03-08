@@ -1,5 +1,5 @@
 package fluentcodes.sandbox.springboot.testitems;
 
-public interface AppName {
+public interface InterfaceBean {
     String getName();
 }

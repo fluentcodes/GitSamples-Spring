@@ -14,5 +14,6 @@ Tests around spring boot.
 
 
 ## Links
+* https://www.baeldung.com/spring-core-annotations
 * https://www.baeldung.com/spring-bean-annotations
 * https://zetcode.com/springboot/bean/
