@@ -1,4 +1,4 @@
-package fluentcodes.sandbox.springboot.configuration;
+package org.fluentcodes.sandbox.springboot.configuration;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;

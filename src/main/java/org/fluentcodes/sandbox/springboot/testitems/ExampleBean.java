@@ -1,4 +1,4 @@
-package fluentcodes.sandbox.springboot.testitems;
+package org.fluentcodes.sandbox.springboot.testitems;
 
 public class ExampleBean {
     private String name;

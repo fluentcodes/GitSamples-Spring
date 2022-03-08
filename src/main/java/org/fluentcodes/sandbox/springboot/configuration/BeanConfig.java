@@ -1,7 +1,7 @@
-package fluentcodes.sandbox.springboot.configuration;
+package org.fluentcodes.sandbox.springboot.configuration;
 
-import fluentcodes.sandbox.springboot.testitems.InterfaceBean;
-import fluentcodes.sandbox.springboot.testitems.ExampleBean;
+import org.fluentcodes.sandbox.springboot.testitems.InterfaceBean;
+import org.fluentcodes.sandbox.springboot.testitems.ExampleBean;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;

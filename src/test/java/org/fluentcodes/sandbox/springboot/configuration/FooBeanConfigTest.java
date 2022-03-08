@@ -1,4 +1,4 @@
-package fluentcodes.sandbox.springboot.configuration;
+package org.fluentcodes.sandbox.springboot.configuration;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

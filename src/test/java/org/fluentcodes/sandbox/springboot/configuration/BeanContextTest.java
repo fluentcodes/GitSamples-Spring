@@ -1,7 +1,7 @@
-package fluentcodes.sandbox.springboot.configuration;
+package org.fluentcodes.sandbox.springboot.configuration;
 
-import fluentcodes.sandbox.springboot.Start;
-import fluentcodes.sandbox.springboot.testitems.ExampleBean;
+import org.fluentcodes.sandbox.springboot.Start;
+import org.fluentcodes.sandbox.springboot.testitems.ExampleBean;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.BeanCreationException;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

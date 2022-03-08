@@ -1,7 +1,7 @@
-package fluentcodes.sandbox.springboot.configuration;
+package org.fluentcodes.sandbox.springboot.configuration;
 
-import fluentcodes.sandbox.springboot.testitems.ExampleBean;
-import fluentcodes.sandbox.springboot.testitems.InterfaceBean;
+import org.fluentcodes.sandbox.springboot.testitems.ExampleBean;
+import org.fluentcodes.sandbox.springboot.testitems.InterfaceBean;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -33,7 +33,7 @@ public class BeanConfigTest {
 
     @Test
     public void testInterfaceBeanDefault() {
-        assertEquals("SpringBootBean", interfaceBeanDefault.getName());
+        assertEquals("default", interfaceBeanDefault.getName());
     }
 
     @Qualifier("interfaceBeanValue")

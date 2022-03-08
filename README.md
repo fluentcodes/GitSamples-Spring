@@ -3,7 +3,10 @@
 Tests around spring boot.
 
 ## Tests
-* [FooBeanTest](https://github.com/fluentcodes/sandbox/blob/master/src/test/java/fluentcodes/sandbox/springboot/configuration/FooBeanConfigTest.java): Bean initialized by foo.properties via PropertySource
+* [FooBeanConfigTest](https://github.com/fluentcodes/sandbox/blob/master/src/test/java/org/fluentcodes/sandbox/springboot/configuration/FooBeanConfigTest.java): Bean initialized by foo.properties via PropertySource
+* [BeanConfigTest](https://github.com/fluentcodes/sandbox/blob/master/src/test/java/org/fluentcodes/sandbox/springboot/configuration/BeanConfigTest.java): Tests for different Beans provided
+* [BeanContextTest](https://github.com/fluentcodes/sandbox/blob/master/src/test/java/org/fluentcodes/sandbox/springboot/configuration/BeanContextTest.java): Bean Context Test (Not working)
+* [SpringContextExtensionTest](https://github.com/fluentcodes/sandbox/blob/master/src/test/java/org/fluentcodes/sandbox/springboot/configuration/SpringContextExtensionTest.java): Spring Context Test
 
 ## Related Topic Branches
 * [java-springboot-properties](https://github.com/fluentcodes/sandbox/tree/java-springboot-empty)
