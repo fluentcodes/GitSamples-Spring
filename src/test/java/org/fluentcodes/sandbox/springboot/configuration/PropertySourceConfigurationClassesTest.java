@@ -1,14 +1,13 @@
-package fluentcodes.sandbox.springboot.configuration;
+package org.fluentcodes.sandbox.springboot.configuration;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.TestPropertySource;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@SpringBootTest(classes = PropertiesConfiguration.class)
-public class PropertiesConfigurationClassesTest {
+@SpringBootTest(classes = PropertySourceConfiguration.class)
+public class PropertySourceConfigurationClassesTest {
 
     @Value("${foo.properties.key:x}")
     private String fooPropertiesKey;

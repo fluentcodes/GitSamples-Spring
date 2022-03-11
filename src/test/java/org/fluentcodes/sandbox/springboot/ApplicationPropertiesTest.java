@@ -1,4 +1,4 @@
-package fluentcodes.sandbox.springboot;
+package org.fluentcodes.sandbox.springboot;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Value;
@@ -15,7 +15,6 @@ public class ApplicationPropertiesTest {
 
     @Value("${key}")
     private String key;
-
     @Test
     public void testKey() {
         assertEquals("value", key);
@@ -23,7 +22,6 @@ public class ApplicationPropertiesTest {
 
     @Value("${application.key}")
     private String applicationKey;
-
     @Test
     public void testApplicationKey() {
         assertEquals("value", applicationKey);
@@ -31,23 +29,13 @@ public class ApplicationPropertiesTest {
 
     @Value("${otherKey}")
     private String otherKey;
-
     @Test
     public void testOtherKey() {
         assertEquals("value", otherKey);
     }
 
-    @Value("${not-existing:default}")
-    private String notExistingUseDefault;
-
-    @Test
-    public void testNotExisting() {
-        assertEquals("default", notExistingUseDefault);
-    }
-
     @Value("${listOfValues}")
     private String[] valuesArray;
-
     @Test
     public void testValuesArray() {
         assertEquals(3, valuesArray.length);
@@ -55,7 +43,6 @@ public class ApplicationPropertiesTest {
 
     @Value("#{${valuesMap}}")
     private Map<String, Integer> valuesMap;
-
     @Test
     public void testValuesMap() {
         assertEquals(3, valuesMap.size());
@@ -64,7 +51,6 @@ public class ApplicationPropertiesTest {
 
     @Value("#{${valuesMap}.key1}")
     private Integer valuesMapKey1;
-
     @Test
     public void testValuesMapKey1() {
         assertEquals(1, valuesMapKey1);
@@ -72,7 +58,6 @@ public class ApplicationPropertiesTest {
 
     @Value("#{${valuesMap}['unknownKey']}")
     private Integer unknownMapKey;
-
     @Test
     public void testValuesMapUnknownKey() {
         assertNull(unknownMapKey);

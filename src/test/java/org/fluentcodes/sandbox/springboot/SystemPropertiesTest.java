@@ -1,11 +1,10 @@
-package fluentcodes.sandbox.springboot;
+package org.fluentcodes.sandbox.springboot;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.Map;
-import java.util.stream.Collectors;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -40,7 +39,6 @@ public class SystemPropertiesTest {
                         (k, v) -> System.out.println(k + ":" + v)
                 );
     }
-
 
 
 }

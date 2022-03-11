@@ -1,4 +1,4 @@
-package fluentcodes.sandbox.springboot.configuration;
+package org.fluentcodes.sandbox.springboot.configuration;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Value;
@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SpringBootTest
 @TestPropertySource("classpath:foo.properties")
-public class PropertiesConfigurationTest {
+public class PropertySourceConfigurationTest {
 
     @Value("${key}")
     private String fooKey;

@@ -3,13 +3,13 @@
 A lot of magic is behind the properties of spring boot.
 
 ## Tests
-* [ValueDirectTest](https://github.com/fluentcodes/sandbox/blob/java-springboot-properties/src/test/java/fluentcodes/sandbox/springboot/ValueDirectTest.java): Direct setting of values
-* [ApplicationPropertiesTest](https://github.com/fluentcodes/sandbox/blob/java-springboot-properties/src/test/java/fluentcodes/sandbox/springboot/ApplicationPropertiesTest.java): application.properties with different value types
-* [SystemPropertiesTest](https://github.com/fluentcodes/sandbox/blob/java-springboot-properties/src/test/java/fluentcodes/sandbox/springboot/SystemPropertiesTest.java): Usage of system properties
-* [EnvironmentPropertiesTest](https://github.com/fluentcodes/sandbox/blob/java-springboot-properties/src/test/java/fluentcodes/sandbox/springboot/EnvironmentPropertiesTest.java): Usage of environment properties
-* [LocalPropertiesTest](https://github.com/fluentcodes/sandbox/blob/java-springboot-properties/src/test/java/fluentcodes/sandbox/springboot/LocalPropertiesTest.java): Set local properties via annotations
-* [ApplicationYamlTest](https://github.com/fluentcodes/sandbox/blob/java-springboot-properties/src/test/java/fluentcodes/sandbox/springboot/ApplicationYamlTest.java): application.yaml value test
-* [ApplicationJsonTest](https://github.com/fluentcodes/sandbox/blob/java-springboot-properties/src/test/java/fluentcodes/sandbox/springboot/ApplicationJsonTest.java): application.json will not be loaded...
+* [ValueDirectTest](https://github.com/fluentcodes/sandbox/blob/master/src/test/java/org/fluentcodes/sandbox/springboot/ValueDirectTest.java): Direct setting of values
+* [ApplicationPropertiesTest](https://github.com/fluentcodes/sandbox/blob/master/src/test/java/org/fluentcodes/sandbox/springboot/ApplicationPropertiesTest.java): application.properties with different value types
+* [SystemPropertiesTest](https://github.com/fluentcodes/sandbox/blob/master/src/test/java/org/fluentcodes/sandbox/springboot/SystemPropertiesTest.java): Usage of system properties
+* [EnvironmentPropertiesTest](https://github.com/fluentcodes/sandbox/blob/master/src/test/java/org/fluentcodes/sandbox/springboot/EnvironmentPropertiesTest.java): Usage of environment properties
+* [LocalPropertiesTest](https://github.com/fluentcodes/sandbox/blob/master/src/test/java/org/fluentcodes/sandbox/springboot/LocalPropertiesTest.java): Set local properties via annotations
+* [ApplicationYamlTest](https://github.com/fluentcodes/sandbox/blob/master/src/test/java/org/fluentcodes/sandbox/springboot/ApplicationYamlTest.java): application.yaml value test
+* [ApplicationJsonTest](https://github.com/fluentcodes/sandbox/blob/master/src/test/java/org/fluentcodes/sandbox/springboot/ApplicationJsonTest.java): application.json will not be loaded...
 
 
 ## Related Topic Branches
@@ -24,6 +24,8 @@ A lot of magic is behind the properties of spring boot.
 ## Links
 * https://www.baeldung.com/spring-value-annotation
 * https://www.yawintutor.com/value-annotation-in-spring-boot/
+* https://www.baeldung.com/spring-tests-override-properties
+* https://www.baeldung.com/spring-test-property-source
 * https://docs.spring.io/spring-boot/docs/current/reference/html/features.html
 * https://docs.spring.io/spring-boot/docs/current/reference/html/application-properties.html#appendix.application-properties.core
 * https://www.baeldung.com/properties-with-spring
