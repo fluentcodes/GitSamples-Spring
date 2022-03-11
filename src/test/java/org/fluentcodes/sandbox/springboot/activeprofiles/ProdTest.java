@@ -1,4 +1,4 @@
-package org.fluentcodes.sandbox.springboot;
+package org.fluentcodes.sandbox.springboot.activeprofiles;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Value;
@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SpringBootTest()
 @ActiveProfiles("prod")
-public class TestActiveProfileProdTest {
+public class ProdTest {
 
     @Value("${profile.env}")
     private String profile;

@@ -1,11 +1,13 @@
 package org.fluentcodes.sandbox.springboot.configuration;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 
-@Configuration
+@Configuration()
+@Qualifier("prefix")
 @ConfigurationProperties(prefix = "my-bean")
 public class PrefixConfiguration {
     private String key1;

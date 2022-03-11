@@ -1,4 +1,4 @@
-package org.fluentcodes.sandbox.springboot;
+package org.fluentcodes.sandbox.springboot.activeprofiles;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Value;
@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 @SpringBootTest(properties = "spring.profiles.active=test")
-public class TestPropertiesProfileTest {
+public class WithPropertyTest {
 
     @Value("${profile.env}")
     private String profile;

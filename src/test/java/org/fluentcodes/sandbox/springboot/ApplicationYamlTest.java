@@ -8,12 +8,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SpringBootTest()
 public class ApplicationYamlTest {
-    @Value("${yaml.key}")
-    private String yamlKey;
 
     @Value("${key}")
     private String key;
-
     /*
     key from yaml file will not be overwritten
      */
@@ -22,6 +19,8 @@ public class ApplicationYamlTest {
         assertEquals("value", key);
     }
 
+    @Value("${yaml.key}")
+    private String yamlKey;
     @Test
     public void testYamlKey() {
         assertEquals("yaml", yamlKey);
