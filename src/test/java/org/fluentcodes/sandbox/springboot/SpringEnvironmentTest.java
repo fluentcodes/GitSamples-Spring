@@ -43,17 +43,4 @@ public class SpringEnvironmentTest {
                 .forEach(propName -> properties.setProperty(propName, springEnv.getProperty(propName)));
         assertEquals("value", properties.getProperty("key"));
     }
-
-    @Test
-    public void notWorking() {
-        Map<String, Object> properties = new HashMap();
-        for(Iterator it = ((AbstractEnvironment) springEnv).getPropertySources().iterator(); it.hasNext(); ) {
-            PropertySources propertySource = (PropertySources) it.next();
-            if (propertySource instanceof EnumerablePropertySource) {
-                properties.putAll(((MapPropertySource) propertySource).getSource());
-            }
-        }
-        assertEquals("value", properties.get("key"));
-    }
-
 }

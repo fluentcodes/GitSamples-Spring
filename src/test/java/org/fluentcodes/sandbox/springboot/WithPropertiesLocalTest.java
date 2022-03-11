@@ -7,7 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SpringBootTest(properties = {"testKey=value"})
-public class LocalPropertiesTest {
+public class WithPropertiesLocalTest {
     @Value("${testKey}")
     private String testKey;
 

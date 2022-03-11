@@ -13,14 +13,13 @@ public class ValueDirectTest {
 
     @Value("string value")
     private String string;
-    @Value("true")
-    private boolean booleanValue;
-
     @Test
     public void testString() {
         assertEquals("string value", string);
     }
 
+    @Value("true")
+    private boolean booleanValue;
     @Test
     public void testBoolean() {
         assertEquals(true, booleanValue);

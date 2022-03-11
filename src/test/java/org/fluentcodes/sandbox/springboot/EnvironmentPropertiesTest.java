@@ -18,22 +18,20 @@ public class EnvironmentPropertiesTest {
     @Value("#{environment.JAVA_HOME}")
     private String javaHome;
 
-    @Value("${notExist:#{environment.JAVA_HOME}}")
-    private String javaHomeDefault;
-
-    @Value("${JAVA_HOME:notExist}")
-    private String javaHomeDirect;
-
     @Test
     public void testJavaHome() {
         assertEquals("/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home", javaHome);
     }
 
+    @Value("${JAVA_HOME:notExist}")
+    private String javaHomeDirect;
     @Test
     public void testJavaHomeDirect() {
         assertEquals("/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home", javaHomeDirect);
     }
 
+    @Value("${notExist:#{environment.JAVA_HOME}}")
+    private String javaHomeDefault;
     @Test
     public void testJavaHomeDefault() {
         assertEquals("/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home", javaHomeDefault);

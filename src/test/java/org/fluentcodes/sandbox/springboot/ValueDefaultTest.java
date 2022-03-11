@@ -9,8 +9,15 @@ import java.util.Map;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNull;
 
-// https://www.baeldung.com/spring-value-annotation
-// https://stackoverflow.com/questions/23348061/how-to-define-value-as-optional
+
+/**
+ * These Tests show the usage of the default value, where the referencing property key is not found.
+ *
+ * https://www.baeldung.com/spring-value-annotation
+ * https://stackoverflow.com/questions/23348061/how-to-define-value-as-optional
+ * https://roufid.com/optional-spring-value/
+ */
+
 @SpringBootTest()
 public class ValueDefaultTest {
 
