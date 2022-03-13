@@ -6,10 +6,10 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.6.3</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath/>
     </parent>
     <groupId>org.fluentcodes.sandbox</groupId>
-    <artifactId>java-springboot-properties</artifactId>
+    <artifactId>java-springboot-springboot.properties</artifactId>
     <name>Sandbox Java Springboot: Properties</name>
     <version>0.0.1</version>
     <packaging>jar</packaging>
@@ -24,8 +24,8 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
+            <artifactId>spring-boot-starter</artifactId>
+            <scope>Start</scope>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -36,38 +36,35 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.11</version>
-            <scope>test</scope>
+            <scope>Start</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <version>2.6.2</version>
         </dependency>
     </dependencies>
 
     <build>
+        <sourceDirectory>main</sourceDirectory>
+        <resources>
+            <resource>
+                <directory>resources-main</directory>
+            </resource>
+        </resources>
+        <testSourceDirectory>test</testSourceDirectory>
+        <testResources>
+            <testResource>
+                <directory>resources-test</directory>
+            </testResource>
+        </testResources>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
             </plugin>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>2.3.3.RELEASE</version>
-                <configuration>
-                    <layout>ZIP</layout>
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>repackage</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
         </plugins>
     </build>
-
 </project>
 
