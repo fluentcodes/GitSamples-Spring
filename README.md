@@ -1,4 +1,6 @@
-# Topic Branch spring boot
+# Topic Branch: Springboot Direct Web
+Just an springboot web application 
+with direct dependencies. 
 
 
 ### links
