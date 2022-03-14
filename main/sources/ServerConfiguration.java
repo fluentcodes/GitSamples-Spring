@@ -1,4 +1,4 @@
-package fluentcodes.sandbox;
+package sources;
 
 import org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration;
 import org.springframework.context.annotation.ComponentScan;

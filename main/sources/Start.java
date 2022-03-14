@@ -1,7 +1,6 @@
-package fluentcodes.sandbox;
+package sources;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 import javax.annotation.PostConstruct;
 
@@ -13,7 +12,7 @@ import javax.annotation.PostConstruct;
 @SpringBootApplication
 public class Start {
     public static void main(String[] args) {
-        SpringApplication.run(fluentcodes.sandbox.Start.class, args);
+        SpringApplication.run(Start.class, args);
     }
 
     @PostConstruct
