@@ -1,17 +1,13 @@
-# Topic Branch - Java Springboot Empty Parent
-Without configurations spring boot starts and ends afterwards.
+# Topic Branch - Java Springboot Empty Initializr
+An out of the box project as its provided from https://start.spring.io/ with a rather old version 2.5.10.
+The actual version is 2.6.4.
 
-A spring boot application using [spring-boot-starter-parent](pom.xml) instead of 
-direct dependencies as in [java-springboot-empty-direct](../../tree/java-springboot-web-direct)
-
+It has a [HELP.md](HELP.md) file. 
 
 ## Related Topic Branches
-* [java-springboot-parent-web](../../tree/java-springboot-parent-web)
-* [java-springboot-empty-direct-](../../tree/java-springboot-empty-direct)
-* [java-springboot-jpa](../../tree/java-springboot-jpa)
-* [java-springboot-jpa-rest](../../tree/java-springboot-jpa-rest)
-* [java-springboot-mongodb](../../tree/java-springboot-mongodb)
-
+* [java-springboot-web-parent](../../tree/java-springboot-web-parent)
+* [java-springboot-web-direct](../../tree/java-springboot-web-direct)
 
 ## Links
+* https://start.spring.io/
 
