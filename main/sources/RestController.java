@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
  * Created by werner.diwischek on 4.9.2020.
  */
 
-@org.springframework.web.bind.annotation.RestController
+@RestController
 public class RestController {
     @RequestMapping(value = "/welcome", method = RequestMethod.POST)
     public String post(
