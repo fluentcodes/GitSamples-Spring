@@ -4,6 +4,15 @@ Will check for RestWebController
 A spring boot application using [spring-boot-starter-parent](pom.xml) instead of 
 direct dependencies as in [java-springboot-web-direct](../../tree/java-springboot-web-direct)
 
+## Controller
+* [RestController](main/sources/RestController.java)
+    * /welcome/NAME
+    * /welcome/get/NAME
+    * /welcome (post)
+    * /welcome/post
+
+## Static
+* [index.html](resources-main/static/index.html)
 
 ## Related Topic Branches
 * [java-springboot-web-direkt](../../tree/java-springboot-web-direct)
