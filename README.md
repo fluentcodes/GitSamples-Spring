@@ -1,9 +1,25 @@
-# Topic Branch: Springboot Direct Web
-Just an springboot web application 
-with direct dependencies. 
+# Topic Branch: Springboot Web Direct
+Just an springboot web application with direct dependencies in the [pom.xml](pom.xml).
+
+## Controller
+* [RestController](main/sources/RestController.java)
+  * /welcome/NAME
+  * /welcome/get/NAME
+  * /welcome (post)
+  * /welcome/post
+
+## Static
+* [index.html](resources-main/static/index.html)
+
+## Related Topic Branches
+* [java-springboot-empty-direct](../../tree/java-springboot-empty-direct)
+* [java-springboot-web-parent](../../tree/java-springboot-web-parent)
+* [java-springboot-jpa](../../tree/java-springboot-jpa)
+* [java-springboot-jpa-rest](../../tree/java-springboot-jpa-rest)
+* [java-springboot-mongodb](../../tree/java-springboot-mongodb)
 
 
-### links
-* https://github.com/spring-projects/spring-boot/tree/v1.1.3.RELEASE/spring-boot-samples
+## Links
+
 
 
