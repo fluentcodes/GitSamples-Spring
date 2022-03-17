@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.fluentcodes.sandbox</groupId>
-	<artifactId>java-springboot-web-direct</artifactId>
-	<name>Sandbox: Java Springboot Web Direct</name>
+	<artifactId>java-springboot-web-jetty</artifactId>
+	<name>Sandbox: Java Springboot Web Direct Jetty</name>
 	<version>0.0.1</version>
     <packaging>jar</packaging>
-	<description>A web application with direct dependencies and no parent</description>
+	<description>A web application with direct dependencies and Jetty webserver</description>
 	<url>https://github.com/fluentcodes/sandbox</url>
 
 	<properties>
@@ -21,27 +21,17 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 			<version>2.6.4</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-tomcat</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
-		<!--dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
-			<version>2.6.4</version>
-		</dependency-->
-		<!--dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-autoconfigure</artifactId>
-			<version>2.6.4</version>
-		</dependency-->
-		<!--dependency>
-			<groupId>org.apache.tomcat.embed</groupId>
-			<artifactId>tomcat-embed-core</artifactId>
-			<version>9.0.36</version>
-		</dependency-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
+			<artifactId>spring-boot-starter-jetty</artifactId>
 			<version>2.6.4</version>
-			<scope>test</scope>
 		</dependency>
 	</dependencies>
 
