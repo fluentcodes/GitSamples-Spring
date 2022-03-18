@@ -5,10 +5,10 @@
 
 	<groupId>org.fluentcodes.sandbox</groupId>
 	<artifactId>java-springboot-empty-direct</artifactId>
-	<name>Sandbox: Java Springboot Web Direct</name>
+	<name>Sandbox: Java Springboot Empty Direct</name>
 	<version>0.0.1</version>
     <packaging>jar</packaging>
-	<description>A web application with direct dependencies and no parent</description>
+	<description>A springboot application with direct dependencies and no parent</description>
 	<url>https://github.com/fluentcodes/sandbox</url>
 
 	<properties>
