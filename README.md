@@ -51,6 +51,12 @@ has the following result for the spring-boot-starter:
     |  |  \- org.springframework:spring-jcl:jar:5.3.16:compile
     |  \- org.yaml:snakeyaml:jar:1.29:compile
 
+## Related Topic Branches
+* [java-springboot-CommandLineRunner](../../tree/java-springboot-CommandLineRunner)
+* [java-springboot-web-direct](../../tree/java-springboot-web-direct)
+* [java-springboot-empty-parent](../../tree/java-springboot-empty-parent)
+
+
 ### Links
 * https://spring.io/guides/gs/spring-boot/
 * https://github.com/spring-projects/spring-boot/tree/main
