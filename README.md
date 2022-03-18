@@ -66,13 +66,8 @@ has the following result for the spring-boot-starter:
     |  \- org.yaml:snakeyaml:jar:1.29:compile
 
 ## Related Topic Branches
-* [java-springboot-CommandLineRunner](../../tree/java-springboot-CommandLineRunner)
-* [java-springboot-web-direct](../../tree/java-springboot-web-direct)
-* [java-springboot-empty-parent](../../tree/java-springboot-empty-parent)
-
+* [java-springboot-empty-direct](../../tree/-empty-direct)
+* [java-springboot-jpa](../../tree/java-springboot-jpa)
 
 ### Links
-* https://spring.io/guides/gs/spring-boot/
-* https://github.com/spring-projects/spring-boot/tree/main
-* https://github.com/spring-projects/spring-boot/tree/main/spring-boot-samples
-* [spring initializr](https://start.spring.io/)
+* https://www.baeldung.com/spring-boot-spring-batch
