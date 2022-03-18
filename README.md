@@ -1,25 +1,45 @@
-# Topic Branch: Springboot Direct Empty
-Just an empty springboot template with direct dependencies. 
+# Topic Branch: Springboot CommandLineRunner 
+
+In [Start.java](main/sources/Start.java) is just a spring boot main implementing a 
+CommandLineRunner interface. 
+
+The method run implements the interface method:
+    
+    @SpringBootApplication
+    public class Start implements CommandLineRunner {
+        public static void main(String[] args) {
+            SpringApplication.run(Start.class, args);
+        }
+        @Override
+        public void run(String... args)  {
+            System.out.println("Hello world from Command Line Runner");
+            Stream<String> argStream = Arrays.stream(args);
+            argStream.forEach(arg -> System.out.println(arg));
+        }
+    }
+
+This just prints out the input values. When calling 
+
+    java -jar target/java-springboot-CommandLineRunner-0.0.1.jar a b c d
+
+will has the following output:   
+
+    2022-03-18 09:58:51.750  INFO 11619 --- [           main] sources.Start                            : Starting Start using Java 11.0.13 on MacBook-Air-von-Werner.local with PID 11619 (/Users/werner/dev/sandbox/target/java-springboot-CommandLineRunner-0.0.1.jar started by werner in /Users/werner/dev/sandbox)
+    2022-03-18 09:58:51.752  INFO 11619 --- [           main] sources.Start                            : No active profile set, falling back to 1 default profile: "default"
+    2022-03-18 09:58:52.002  INFO 11619 --- [           main] sources.Start                            : Started Start in 5.478 seconds (JVM running for 5.724)
+    Hello world from Command Line Runner
+    a
+    b
+    c
+    d
+
 
 ## Build
 Build with 
 
      mvn clean install 
 
-create a java-springboot-empty-direct-0.0.1.jar file in target. It's size is around 8 MB.
-
-You could start it direct with
-
-    java-springboot-empty-direct-0.0.1.jar
-
-It stops automatically afterward 
-
-    2022-03-18 09:25:15.115  INFO 11144 --- [           main] sources.Start                            : Starting Start using Java 17.0.1 on MacBook-Air-von-Werner.local with PID 11144 (/Users/werner/dev/sandbox/target/classes started by werner in /Users/werner/dev/sandbox)
-    2022-03-18 09:25:15.117  INFO 11144 --- [           main] sources.Start                            : No active profile set, falling back to 1 default profile: "default"
-    Init Something
-    2022-03-18 09:25:15.369  INFO 11144 --- [           main] sources.Start                            : Started Start in 5.475 seconds (JVM running for 5.811)
-
-    Process finished with exit code 0
+create a java-springboot-CommandLineRunner.jar file in target. It's size is around 8 MB.
  
 ## Run
 Run it with
@@ -52,13 +72,12 @@ has the following result for the spring-boot-starter:
     |  \- org.yaml:snakeyaml:jar:1.29:compile
 
 ## Related Topic Branches
-* [java-springboot-CommandLineRunner](../../tree/java-springboot-CommandLineRunner)
-* [java-springboot-web-direct](../../tree/java-springboot-web-direct)
-* [java-springboot-empty-parent](../../tree/java-springboot-empty-parent)
-
+* [java-springboot-empty-direct](../../tree/java-springboot-empty-direct)
 
 ### Links
+* https://www.tutorialspoint.com/spring_boot/spring_boot_runners.htm
 * https://spring.io/guides/gs/spring-boot/
 * https://github.com/spring-projects/spring-boot/tree/main
 * https://github.com/spring-projects/spring-boot/tree/main/spring-boot-samples
 * [spring initializr](https://start.spring.io/)
+* https://mkyong.com/java8/java-how-to-convert-array-to-stream/
