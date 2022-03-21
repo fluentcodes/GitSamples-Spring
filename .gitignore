@@ -9,10 +9,5 @@ build/
 */.idea/
 target/*
 out/*
-eo-db-hibernate/
-builder/
-builder-eo/
-builder-sandboxes/
-builder-projects/
 .deploy.sh
 .vscode/

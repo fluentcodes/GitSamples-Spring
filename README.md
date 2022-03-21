@@ -1,6 +1,6 @@
-# Topic Branch: Springboot Web Direct
+# GitSamples Topic Branch: Springboot Vue.js
 Just an springboot web application with direct dependencies in the 
-[pom.xml](pom.xml).
+[pom.xml](pom.xml).                 
 
 A spring boot application using [direct dependencies](pom.xml) instead of
 parent dependencies as in [java-springboot-web-parent](../../tree/java-springboot-web-parent)
@@ -120,7 +120,5 @@ the following is shown:
 
 
 ## Links
-* https://www.baeldung.com/spring-mvc-static-resources
-* https://stackoverflow.com/questions/3342908/how-to-get-a-dependency-tree-for-an-artifact
-* https://docs.spring.io/spring-boot/docs/current/reference/html/application-properties.html#appendix.application-properties.server
-* https://stackoverflow.com/questions/3855127/find-and-kill-process-locking-port-3000-on-mac
+* https://entwickler.de/spring/zwei-zum-verlieben/
+* https://www.danvega.dev/blog/2021/01/22/full-stack-java-vue/
