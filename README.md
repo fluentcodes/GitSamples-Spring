@@ -1,11 +1,10 @@
 # Topic Branch: Spring Home
 
-## Other GitSample
+## Other GitSamples
 * [GitSamples](https://github.com/fluentcodes/GitSamples): The stuff not to find in other GitSamples
 * [GitSamples-GIT](https://github.com/fluentcodes/GitSamples-GIT): Git samples with test branches for own experiments.
 * [GitSamples-Java](https://github.com/fluentcodes/GitSamples-Java): Java with design patterns and Java8
-* [GitSamples-Spring](https://github.com/fluentcodes/GitSamples-Spring): Spring Topic Branches
-* [GitSamples-Libs](https://github.com/fluentcodes/GitSamples-Libs): Topic Branches for different Java Libs
+* [GitSamples-Java-Libs](https://github.com/fluentcodes/GitSamples-Java-Libs): Topic Branches for different Java Libs
 
 ## Recent
 March 2022
